@@ -21,9 +21,11 @@ html{
 }
  body {
   height: 100%;
+  overflow-x: hidden!important;
  }
 
  .container{
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding-top: 3rem;
@@ -236,7 +238,10 @@ strong{
     margin: 1rem;
 }
 .main-content img{
-    margin: 2rem;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
 }
 .last-text{
     font-size: 1.8rem;
@@ -245,9 +250,10 @@ strong{
 .last-details-order{
     display: flex;
     align-items: center;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin: 1rem;
     color: #ED4545;
+    flex-wrap: wrap;
 }
 .last-icon{
     margin-top: 1rem;
