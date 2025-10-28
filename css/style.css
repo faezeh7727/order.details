@@ -33,7 +33,7 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    padding: 1.5rem;
+    padding: 1.5rem 1,5rem;
 }
 @media(min-width:1024px){
     .order-Section{
