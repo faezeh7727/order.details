@@ -109,7 +109,7 @@ font-size: 1.9rem;
     width: 100%;
     max-width:970px ;
     height: auto;
-    padding: 1.5rem;
+    padding: 1rem 1rem;
 }
 .header-items{
    width: 220px; 
@@ -130,6 +130,7 @@ font-size: 1.9rem;
     margin-top: 2rem;
 }
 @media(max-width:768px){
+    
     .header-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -207,6 +208,7 @@ strong{
 @media(max-width:768px){
     .main-content{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     
