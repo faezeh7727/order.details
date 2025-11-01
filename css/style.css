@@ -21,543 +21,91 @@ html{
     font-size: 62.5%;
 }
 
- 
+
 
  .container{
-  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding-top: 3rem;
 }
 
 .order-section{
-    display: grid;
-    grid-template-columns: 1fr ;
-    place-items: center;
-
+   padding: 1rem 1rem;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
 }
-@media(min-width:1024px){
+.account-content{
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--main-color);
+    height: fit-content;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+.account-user{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.first-user{
+    justify-content: space-between;
+}
+.account-icon{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.second-info-icone{
+    font-size: 1.5rem;
+}
+.account-user p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.info{
+    display: flex;
+}
+.number-text{
+    color: #504f4f;
+}
+
+.account-button{
+    display: flex;
+    justify-content: center;
+    background-color: #2F0D0C;
+    color: #F7F7F7;
+    border-radius: 10px;
+}
+
+.message-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem ;
+    width: 25px;
+    height: 25px;
+    background-color: #ED4545;
+    border-radius: 50%;
+    color: #F7F7F7;
+    font-size: 1.5rem;
+}
+
+@media(min-width:768px){
     .order-section{
-        grid-template-areas: 
-        " account ordercontent";
-        grid-template-columns: 30fr 70fr;
-    }
-    
-    .order-content{
-        grid-area: ordercontent;
-    }
-    .account-content{
-        grid-area:account ;
-        margin-left: 1rem;
-    }
-}
-.account-content{
-    width: 100%;
-    max-width: 340px;
-    height: 500px;
-    background-color: var(--main-color);
-    border-radius: 2rem;
-    padding: auto;
-}
-
-.account-user{
-    width: 100%;
-    width: 290px;
-    height: 52px;
-    padding: 1.2rem 1.6rem 1.2rem 1.6rem;
-    margin: 1.3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-left: 2rem;
-}
-
-.info{
-    margin-left: 13rem;
-}
-.number-text{
-    font-size: 1.4rem;
-    color: #616161;
-}
-.account-icon{
-    font-size: 2.8rem;
-    margin-left: 1.8rem;
-}
-.second-info-icone{
-font-size: 1.9rem;
-}
-.message-badge{
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ED4545;
-    border-radius: 12px;
-    color: aliceblue;
-
-}
-.account-button{
-    background-color: var(--button);
-    color: aliceblue;
-    border:1px solid #ED4545;
-    border-radius: 8px;
-}
- 
-/*order-content*/
-
-.order-content{
-    padding: 1rem 1rem;
-}
-.header-items{
-   width: 200px;
-   height: 30px;
-   border-radius: 1.6rem;
-   border: 1px solid rgb(175, 201, 250);
-   margin: 1rem;
-   padding: 2.5rem;
-   background-color:var(--main-color);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   white-space: nowrap;
-}
-.header-content{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-@media(max-width:768px){
-    .info {
-    margin-left: 0;
-  }
-  .message-badge {
-    margin-right: 0;
-  }
-    .container{
-        width: 100%;
-        padding: 0 1rem;
-    }
-    .header-items {
-  width: 100%;
-  max-width: 220px;} /* فقط محدود کن، نه اجبار */
-
-.account-content {
-  width: 90%;
-  max-width: 280px;
-}
-    .header-content{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        place-items: center;
-    }
-    .main-content-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text1,.text2{
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    }
-    .last-text{
-    font-size:1.2rem;
-    margin: 0.5rem;
-    }
-    .last-details-order{
-        font-size: 1.2rem;
-        margin: 0.5rem;
-    }
-}
-.details-text1{
-    font-size: 1.9rem;
-    font-weight: 800;
-}
-.details-text2{
-    font-size: 1.8rem;
-}
-strong{
-    margin-left: 0.5rem;
-}
-.badge-icon-1{
-    font-size: 2.4rem;
-    color: var(--badge-primary);
-}
-.badge-icon-2{
-    font-size: 2.4rem;
-    color: var(--badge-secondary);
-}
-.badge-icon-3{
-    font-size: 2.4rem;
-}
-.badge-icon-4{
-    font-size: 2.4rem;
-    color: var(--last-badge);
-}
-.order-badge{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    margin-left: 2rem;
-}
-.badge1{
-    background-color: #bbd4fd;
-    padding-top: 0.5rem;
-}
-.badge2{
-    background-color: #d4f8de;
-}
-.badge3{
-    background-color: #e0dfdf;
-}
-.badge4{
-    background-color: #facdcd;
-}
-.main-content-badge{
- width: 145px;   
- height: 44px;
- border-radius: 8px;
- background-color: #cdddf6;
- color: #2E7AF1;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 1.8rem;
- white-space: nowrap;
- margin: 3rem;
-}
-.badge-text{
-    margin-right: 0.5rem;
-}
-@media(max-width:768px){
-    .main-content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        grid-template-areas:
+         "ordercontent accountcontent"
+        ;
+        grid-template-columns:30fr 70fr ;
     }
     .account-content{
-        width: 95%;
+        grid-area:ordercontent;
     }
-    .header-content{
-        margin-top: 2rem;
-    }
-}
-.main-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
-    padding: 1rem;
-    padding-top: 2rem;
-    border-radius: 8px;
-    border: 1px solid  #bfd5f8;
-}
-
-.text1{
-    font-size: 1.8rem;
-}
-.text2{
-    font-size: 1.8rem;
-    color: #616161;
-    margin: 1rem;
-}
-.main-content img{
-    max-width: 100%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-}
-.last-text{
-    font-size: 1.8rem;
-    margin: 1rem;
-}
-.last-details-order{
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 1rem;
-    color: #ED4545;
-    flex-wrap: wrap;
-}
-.last-icon{
-    margin-top: 1rem;
-}
-.my-order-button{
-    display: none;
-}
-@media(max-width:1024px){
-    .my-order-button{
-        margin-top: 4rem;
-        display: block!important;
-        font-size: 2rem;
-        background-color: var(--badge-primary);
-        border:none;
-        color: aliceblue;
-        padding: 1rem;
-        border-radius: 8px;
-        
-    }
-}
-
-
-.order-Section{
-    width: 100%;
-    display: grid;
-    grid-template-columns:1fr ;
-    place-items: center;
-}
-@media(min-width:1024px){
-    .order-Section{
-        grid-template-areas: 
-        " account ordercontent";
-        grid-template-columns: 30fr 70fr;
-    }
-    
     .order-content{
-        grid-area: ordercontent;
-    }
-    .account-content{
-        grid-area:account ;
-        margin-left: 1rem;
+        grid-area:accountcontent ;
     }
 }
-.account-content{
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    background-color: var(--main-color);
-    border-radius: 2rem;
-    padding: auto;
-}
-.account-user{
-    width: 270px;
-    height: 52px;
-    padding: 1.2rem 1.6rem 1.2rem 1.6rem;
-    margin: 1.3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-left: 2rem;
-}
-
-.info{
-    margin-left: 13rem;
-}
-.number-text{
-    font-size: 1.4rem;
-    color: #616161;
-}
-.account-icon{
-    font-size: 2.8rem;
-    margin-left: 1.8rem;
-}
-.second-info-icone{
-font-size: 1.9rem;
-
-}
-.message-badge{
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ED4545;
-    border-radius: 12px;
-    color: aliceblue;
-    margin-right: 10rem;
-}
-.account-button{
-    background-color: var(--button);
-    color: aliceblue;
-    border:1px solid #ED4545;
-    border-radius: 8px;
-}
- 
-/*order-content*/
-
-.order-content{
-    padding: 1rem 1rem;
-}
-.header-items{
-   width: 220px; 
-   height: 80px;
-   border-radius: 1.6rem;
-   border: 1px solid rgb(175, 201, 250);
-   margin: 1rem;
-   padding: 2.5rem;
-   background-color:var(--main-color);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   white-space: nowrap;
-}
-.header-content{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-@media(max-width:768px){
-    
-    .header-content{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        place-items: center;
-    }
-    .main-content-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text1,.text2{
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    }
-    .last-text{
-    font-size:1.2rem;
-    margin: 0.5rem;
-    }
-    .last-details-order{
-        font-size: 1.2rem;
-        margin: 0.5rem;
-    }
-}
-.details-text1{
-    font-size: 1.9rem;
-    font-weight: 800;
-}
-.details-text2{
-    font-size: 1.8rem;
-}
-strong{
-    margin-left: 0.5rem;
-}
-.badge-icon-1{
-    font-size: 2.4rem;
-    color: var(--badge-primary);
-}
-.badge-icon-2{
-    font-size: 2.4rem;
-    color: var(--badge-secondary);
-}
-.badge-icon-3{
-    font-size: 2.4rem;
-}
-.badge-icon-4{
-    font-size: 2.4rem;
-    color: var(--last-badge);
-}
-.order-badge{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    margin-left: 2rem;
-}
-.badge1{
-    background-color: #bbd4fd;
-    padding-top: 0.5rem;
-}
-.badge2{
-    background-color: #d4f8de;
-}
-.badge3{
-    background-color: #e0dfdf;
-}
-.badge4{
-    background-color: #facdcd;
-}
-.main-content-badge{
- width: 145px;   
- height: 44px;
- border-radius: 8px;
- background-color: #cdddf6;
- color: #2E7AF1;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 1.8rem;
- white-space: nowrap;
- margin: 3rem;
-}
-.badge-text{
-    margin-right: 0.5rem;
-}
-@media(max-width:768px){
-    .main-content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .header-content{
-        margin-top: 2rem;
-    }
-}
-.main-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
-    padding: 1rem;
-    padding-top: 2rem;
-    border-radius: 8px;
-    border: 1px solid  #bfd5f8;
-}
-
-.text1{
-    font-size: 1.8rem;
-}
-.text2{
-    font-size: 1.8rem;
-    color: #616161;
-    margin: 1rem;
-}
-.main-content img{
-    max-width: 100%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-}
-.last-text{
-    font-size: 1.8rem;
-    margin: 1rem;
-}
-.last-details-order{
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 1rem;
-    color: #ED4545;
-    flex-wrap: wrap;
-}
-.last-icon{
-    margin-top: 1rem;
-}
-.my-order-button{
-    display: none;
-}
-@media(max-width:1024px){
-    .my-order-button{
-        margin-top: 4rem;
-        display: block!important;
-        font-size: 2rem;
-        background-color: var(--badge-primary);
-        border:none;
-        color: aliceblue;
-        padding: 1rem;
-        border-radius: 8px;
-        
-    }
-}
-
